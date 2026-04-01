@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+# 🛒 Grocery Billing App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, scalable grocery billing application built using React, Redux Toolkit, and TypeScript. The app demonstrates clean architecture, efficient state management, and real-world billing logic with offer handling. It also integrates Firebase Firestore for persistent data storage and is deployed on Firebase Hosting.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+👉 Live Application = https://grocery-billing-app-6e4a6.web.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 💻 GitHub Repository
 
-## Expanding the ESLint configuration
+👉repo link = https://github.com/karan5454/grocery-billing-app.git
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Key Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* Product selection and cart management
+* Dynamic billing calculation (subtotal, savings, final total)
+* Offer engine (discounts and special offers)
+* Firebase Firestore integration for order persistence
+* Clean, responsive UI with Tailwind CSS
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🧠 Tech Stack
+
+* React + TypeScript
+* Redux Toolkit (state management)
+* Tailwind CSS (UI styling)
+* Firebase (Firestore + Hosting)
+
+---
+
+## ⚙️ Setup Instructions
+
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Build & Deploy
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
+firebase deploy
 ```
+
+---
+
+## 💡 Highlights
+
+* Strong focus on clean code and maintainable architecture
+* Real-world implementation of billing and discount logic
+* End-to-end workflow: UI → State → Database → Deployment
+
+---
+
+## 📌 About
+
+This project was developed as part of a technical assignment to demonstrate full-stack capabilities, including frontend development, state management, and backend integration.
+
+---
+
+## 👨‍💻 Author
+
+Karan
